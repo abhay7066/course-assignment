@@ -1,0 +1,80 @@
+STRING A
+Assignment 1
+
+1.What is string in java
+ = in java string is object that refer to sequence of character , further the string object in java is part of ‘java.lang’.
+
+2.Type of string in java
+ = 1 immutable string
+     2 mutable string
+
+3.In how many way can you crate string in java
+ = in java we can crate string using many many ways
+    1 using new keyword
+         String name = new String (“”)
+    2 using only string literal
+          String name = “”
+     3 using StringBuffer and StringBuilder
+
+4.What is a string constant pool
+ = string constant pool is special are in heap memory where JVM crate memory location for string literal
+
+5.What do you mean by mutable and immutable objects ?
+  = mutable and immutable refer to the state of an object and whether value or state can be changed after if is crated
+Mutable string - mutable mean string can be chang after crate .
+Immutable string - mean it can be not chang after crate and if we want to chang is than require to crate nu object
+
+6.Where exactly string constant pool located in heap memory
+ = inside the heap memory JVM reserved some part of memory for store string litral
+
+
+Assignment
+1.   What is mutable string in java explain with example
+               = In java, String is mutable by default, meaning once’s mutable string is created its   value can nit be change, however you want to use mutable string like object than use “StringBuffer” or “Stringbuilder”.
+
+Example:-
+
+Stringbuffer sb=new StringBuffer(“abhay”);
+sb.append(“cahuhan”);
+
+2. Whap t orevers a String
+       Input:”PWSKILLS”
+      Output: “SLLIKSWP”
+We learn it by one example
+
+Example
+
+Assume in mian class
+
+String input = “PWSKILLS”;
+String reverse = reverseStrng(input);
+
+Public static String reverseString(String st)
+{
+   StringBuilder sb= new StringBuilder(st);
+
+    sb.reverse();
+
+ Return sb.toString();
+
+}
+
+ 3.  Wap to reverse a sentence while preserving th position
+       input=”think twice”
+       output = “kniht eciwt”
+       = to reverse of each word in sentence you must preserve this following thing
+Split the sentence in individual word
+ Reverse each word
+Reconstruct the sentence with each word.
+
+Example :- given in code setion
+
+4.  Wap a string to sort alphabetically
+  =  answer is given in code section :-
+
+
+
+
+
+
+
