@@ -15,7 +15,7 @@ public class simpleS {
         System.out.println("name is :"+name);
 
         //solution 2 :-
-        // in java we can concat two string using '+' operator and "concat" method..
+        // in java we can concat two string using '+' operator and "concat" method.
 
         String name1= "abhay ";
         String  surname="chauhan";
