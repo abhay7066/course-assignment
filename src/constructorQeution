@@ -1,0 +1,78 @@
+Q1. What is constructor?
+    = A constructor in java is special type of method that called when object is created.
+      it is use to initialize variable and also initialize newly created object and perform
+      any other operation that require to perform at the time of object creation.
+
+Q2. What is constructor chaining?
+    = Constructor chaining in java is process of calling on constructor from another constructor
+      from same class or parent class.
+      it is achieved by two ways
+       1.within same class - using "this" ket word
+       2.from the parent class - using "super" key word
+
+Q3. can we call subclass constructor from superclass constructor?
+    = in java we cannot directly called subclass constructor from superclass constructor.
+
+Q4. What happen if you keep a return type for a constructor?
+    = In java constructor is special method used to initialize object. they different from
+      regular method in many ways one is they don't have return type, not even 'void'. if
+      we attempt to specify return type for constructor it treated as normal method instead os
+      constructor.
+      if we declare return type for constructor than also java not provide default constructor.
+
+Q5. What is no-argument constructor?
+    = A no-argument constructor is called default constructor,it is constructor that take no
+      argument as parameter.it used to create object with default value. if we not create
+      no-argument constructor than java compiler automatically create default constructor.
+
+Q6. How is a no-argument constructor is different from the default constructor?
+    = The terms "no-argument constructor" and "default constructor" are often used interchangeably,
+      but they can have slightly different implications depending on the context.No-argument constructor
+      is constructor with no parameter and define by explicitly by programmer. and default constructor is
+      automatically called when by compiler for initialize object.
+
+Q7. When do we need constructor overloading?
+    = Constructor overloading is the practice of having multiple constructors in a class, each with a
+      different parameter list. It allows objects to be initialized in different ways depending on the
+      parameters provided during object creation.
+      we need constructor overloading for many reason mention below
+       1.initialize flexibility
+       2.Default value-overload constructor can we provide default value for different object
+       3.Avoid repetitive code-if multiple constructor can perform initialize task but with differnt
+                               parameter than it avoid duplication of code
+       4.encapsulation-constructor overload can enforce encapsulation by allowing the class to validate
+                       inout parameter before object creation
+       5.improve readability
+
+Q8. What is default constructor explain with example
+    = Default constructor is constructor that automatically created by compiler for initialize object
+      it is automatically create when programmer does not create any constructor.The default constructor
+      initializes the object with default values, which are typically null.
+      Example-:
+
+         public class MyClass {
+             private int number;
+             private String text;
+
+             public MyClass()
+             {
+
+
+             }
+
+             public void display()
+             {
+                 System.out.println("Number: " + number);
+                 System.out.println("Text: " + text);
+             }
+
+             public static void main(String[] args) {
+
+                 MyClass obj = new MyClass();
+
+                 obj.display();
+             }
+         }
+
+
+
