@@ -14,7 +14,7 @@ class instanceCount
     }
 }
 
-public class tracInstance {
+public class prac1 {
     public static void main(String[] args) {
 
         instanceCount i1=new instanceCount();
