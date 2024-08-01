@@ -19,7 +19,7 @@ public class Questions5 {
             // Get the number of digits in the number
             int numDigits = countDigits(n, 0);
             // Start the recursive check with initial sum 0
-            return isArmstrongHelper(n, numDigits, 0);
+            return isArmstrongHelper(n, numDigits,  0);
         }
 
         // Recursive method to count the number of digits
