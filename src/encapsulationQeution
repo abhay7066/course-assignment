@@ -1,0 +1,182 @@
+Q1. What is encapsulation in java?Why it's called data hiding?
+    =Encapsulation is the fundamental principal of object oriented programming(OOP).
+     it refer to building a data and method that operate data in single unit, called
+     class. in java encapsulation is achieve by using access modifier that restrict
+     data at class level and can be access by providing public method.q
+
+     Encapsulation is also called or refer as "Data Hiding" because it allow internal
+     object to be hiding from outside of class, it can be achieve by declaring data
+     member mean variable as 'private' and providing public getter ans setter for
+     access and update that private member.
+
+Q2. What are the important features of encapsulation?
+    = important features of encapsulation
+       1.Data hiding
+         = in this data member declare as private that prevent access of data member
+           from out side of class.and for access that member public method getter and
+           setter are used.
+
+       2.Improve security
+         = By restricting data field encapsulation help to protect data integrity from
+           out side of the class. and can access and modify in class.
+
+       3.Improve code Reusability
+         = encapsulation data is more reusable because it provide well define interface.
+
+       4.Simplified testing and debugging
+         = By encapsulation it is easy to testing data.
+
+Q3. What are getter and setter method in java explain with an example
+    = Getter and setter are public method that used to access and modify private member
+      of class from out side of the class.
+
+      Getter Method
+       = getter method used to access or retrieve the value of field.It use fir get and capital
+         letter of that data field
+
+      Setter Method
+       = setter method is used to ser or update that field.
+
+    Example -:
+       class a
+       {
+          private int age;
+          private String name;
+
+          public void setAge(int a)
+          {
+            age=a;
+          }
+          public void setName(String b)
+          {
+            name=b;
+          }
+
+          public int getAge()
+          {
+            return age;
+          }
+          public String getName()
+          {
+            return name;
+          }
+
+       }
+
+       public class person
+       {
+         public static void main(String[] args)
+         {
+           a obj-new a()
+
+           a.setAge(14);
+           a.setName(ram);
+
+           System.out.println("age="+a.getAge + " Name="+ a.getName);
+         }
+       }
+
+Q4. What is the use of this key word explain with example
+    = the "this" key word in java is reference variable that refer to current object."this"
+      key word used to distinguishing between instance variable and other variable with the
+      same name.
+      here mention some use of this key word
+        1.Distinguish instance variable with other parameter
+        2.invoke current object method
+        3.pass current object as parameter
+        4.return current object
+
+        Example-:
+           public class Example
+            {
+               private int value;
+
+               public Example(int value)
+               {
+                   this.value = value;
+               }
+
+               public void display()
+               {
+                   System.out.println("Value: " + this.value);
+               }
+
+               public static void main(String[] args)
+                {
+                   Example obj = new Example(10);
+                   obj.display();
+               }
+           }
+
+Q5. What is the advantage of encapsulation?
+    = Encapsulation refer to many advantage here some mention
+        1.Data hiding-encapsulation allow to hid internal data from out of the class.
+                      by using private specifier.
+        2.Control over data- Encapsulation control over hoe to access data .
+        3.Improve security- By hiding the internal data and provide access control
+                            encapsulation provide data security.
+        4.Reusability- encapsulation class is more reusable because they have welll
+                       structured interface for access data.
+        5.Simplify testing and debugging- here it is simple because access and modification
+                                          can be by only by using public method.
+
+Q6. How to achieve encapsulation in java ? Give example.
+    = we can achieve encapsulation by following steps
+       1- declare the variable as private
+       2- provide public getter and setter
+
+           let see one example for encapsulation
+
+       example-:
+
+       public class Employee
+        {
+
+           private String name;
+           private double salary;
+
+           public Employee(String name, double salary)
+            {
+               this.name = name;
+               setSalary(salary);
+            }
+
+           public String getName()
+            {
+               return name;
+            }
+           public void setName(String name)
+            {
+               this.name = name;
+            }
+
+           public double getSalary()
+            {
+               return salary;
+            }
+
+           public void setSalary(double salary)
+            {
+
+                   this.salary = salary;
+
+            }
+
+           public static void main(String[] args) {
+               /
+               Employee emp = new Employee("John Doe", 50000);
+
+
+               System.out.println("Employee Name: " + emp.getName());
+               System.out.println("Employee Salary: " + emp.getSalary());
+
+               emp.setName("Jane Doe");
+               emp.setSalary(60000);
+
+               System.out.println("Updated Employee Name: " + emp.getName()); // Output: Updated Employee Name: Jane Doe
+               System.out.println("Updated Employee Salary: " + emp.getSalary()); // Output: Updated Employee Salary: 60000.0
+
+           }
+       }
+
+
